@@ -1,6 +1,13 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
-import { HomePage, LoginPage, ProductFormPage, SignupPage } from "../pages";
+import {
+  CategoryProductPage,
+  HomePage,
+  LoginPage,
+  ProductFormPage,
+  SignupPage,
+  SingleProductPage,
+} from "../pages";
 import { Layout } from "../components/Layout";
 import { ProtectedRoute } from "./ProtectedRoute";
 import { useUser } from "../hooks";
@@ -16,6 +23,7 @@ export const RoutesComponent = () => {
           path: "/login",
           element: <LoginPage />,
         },
+
         {
           path: "/signup",
           element: <SignupPage />,
@@ -26,6 +34,14 @@ export const RoutesComponent = () => {
             {
               path: "/",
               element: <HomePage />,
+            },
+            {
+              path: "/products/categories/:category",
+              element: <CategoryProductPage />,
+            },
+            {
+              path: "/products/categories/:category/:id",
+              element: <SingleProductPage />,
             },
             {
               path: "/products/add",

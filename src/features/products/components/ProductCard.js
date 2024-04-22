@@ -1,18 +1,18 @@
 import React from "react";
 import { Card, Grid, styled, Stack } from "@mui/material";
-import { Link, Text } from "../../../components/atoms";
+import { Link, Text } from "../../../components/header/atoms";
 import { ProductCardAction } from "./ProductCardAction";
 
 const StyledImage = styled("img")(() => ({
   objectFit: "cover",
   width: "100%",
-  height: "311px",
-  borderRadius: 20,
+  height: "350px",
+  borderRadius: 10,
 }));
 
 const StyledCard = styled(Card)(() => ({
   minWidth: "320px",
-  height: 450,
+  height: 475,
   backgroundColor: "transparent",
   border: "none",
   padding: "24px",
@@ -24,11 +24,11 @@ const StyledCard = styled(Card)(() => ({
 }));
 
 export const ProductCard = ({ product }) => {
-  const { name, image, brand, category, price } = product;
+  const { name, image, brand, category, price, _id } = product;
   return (
     <Grid item xs={12} sm={12} md={4} lg={3}>
       <StyledCard>
-        <Link>
+        <Link to={`/products/categories/${category}/${_id}`}>
           <StyledImage src={image} alt={`${brand}-${name}`} />
         </Link>
 

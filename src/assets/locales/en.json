@@ -1,4 +1,27 @@
 {
   "home": "Home Page",
-  "save_product": "Save Product"
+  "Searchbar": "Searchbar",
+  "save_product": "Save Product",
+  "Product Name": "Product Name",
+  "Product Brand": "Product Brand",
+  "Product Description": "Product Description",
+  "price: descending": "price: descending",
+  "price: ascending": "price: ascending",
+  "name: descending": "name: descending",
+  "name: ascending": "name: ascending",
+  "Edit": "Edit",
+  "Delete": "Delete",
+
+  "Add Product": "Add Product",
+  "Product name": "Product name",
+  "Product description": "Product description",
+  "Product brand": "Product brand",
+  "Product category": "Product category",
+  "Product price": "Product price",
+  "Add product": "save product",
+  "Add to cart": "Add to cart",
+  "parfumes in cart": "parfumes in cart",
+  "Total": "Total",
+  "in stock": "in stock",
+  "Remove": "Remove"
 }

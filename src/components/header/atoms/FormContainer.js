@@ -1,7 +1,7 @@
 import { FormControl, styled, Box, Stack } from "@mui/material";
 import React from "react";
 import { Link } from "./Link";
-import LogoImage from "../../assets/images/logo-2150297_640.jpg";
+import LogoImage from "../../../assets/images/logo-2150297_640.jpg";
 
 const StyledFormContainer = styled(FormControl)(() => ({
   marginTop: "15px",

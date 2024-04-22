@@ -2,7 +2,7 @@ import React from "react";
 import { Controller, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { signupValidationSchema } from "./signupValidation";
-import { Button, FormContainer, Input } from "../../../components/atoms";
+import { Button, FormContainer, Input } from "../../../components/header/atoms";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { authenticateUser } from "../../../redux/slices/userSlice";

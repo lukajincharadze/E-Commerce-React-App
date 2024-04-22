@@ -1,6 +1,6 @@
 import React from "react";
 import { useProduct } from "../../../hooks";
-import { LoadingWrapper } from "../../../components/atoms";
+import { LoadingWrapper } from "../../../components/header/atoms";
 import { GridContainer } from "../components";
 import { ProductCard } from "../components/ProductCard";
 

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import styles from "../src/app.css";
 import { RoutesComponent } from "./routes";
 import { useDispatch } from "react-redux";
 import { fetchHomePageProducts } from "./redux/slices";
@@ -9,7 +10,7 @@ const App = () => {
     dispatch(fetchHomePageProducts());
   }, []);
   return (
-    <div>
+    <div className={styles.container}>
       <RoutesComponent />
     </div>
   );

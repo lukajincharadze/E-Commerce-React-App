@@ -2,15 +2,22 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import React, { useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { productFormValidationSchema } from "./ProductFormValidation";
-import { Button, FormContainer, Input, Text } from "../../../components/atoms";
+import {
+  Button,
+  FormContainer,
+  Input,
+  Text,
+} from "../../../components/header/atoms";
 import FileBase64 from "react-file-base64";
 import { useDispatch } from "react-redux";
 import { saveProduct, setSelectedProduct } from "../../../redux/slices";
-import { FormPageContainer } from "../../../components/atoms/FormContainer";
+import { FormPageContainer } from "../../../components/header/atoms/FormContainer";
 import { useProduct } from "../../../hooks";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const ProductForm = () => {
+  const { t } = useTranslation();
   const {
     control,
     handleSubmit,
@@ -54,7 +61,7 @@ export const ProductForm = () => {
 
   return (
     <FormPageContainer isProductForm>
-      <Text>Add Product</Text>
+      <Text>{t("Add Product")}</Text>
       <FormContainer>
         <Controller
           name="name"
@@ -68,7 +75,7 @@ export const ProductForm = () => {
                 onChange={onChange}
                 helperText={errors.name?.message}
                 error={Boolean(errors.name)}
-                label="Product name"
+                label={t("Product name")}
               />
             );
           }}
@@ -85,7 +92,7 @@ export const ProductForm = () => {
                 onChange={onChange}
                 helperText={errors.description?.message}
                 error={Boolean(errors.description)}
-                label="Product description"
+                label={t("Product description")}
               />
             );
           }}
@@ -102,7 +109,7 @@ export const ProductForm = () => {
                 onChange={onChange}
                 helperText={errors.brand?.message}
                 error={Boolean(errors.brand)}
-                label="Product brand"
+                label={t("Product brand")}
               />
             );
           }}
@@ -119,7 +126,7 @@ export const ProductForm = () => {
                 onChange={onChange}
                 helperText={errors.category?.message}
                 error={Boolean(errors.category)}
-                label="Product category"
+                label={t("Product category")}
               />
             );
           }}
@@ -137,7 +144,7 @@ export const ProductForm = () => {
                 onChange={onChange}
                 helperText={errors.price?.message}
                 error={Boolean(errors.price)}
-                label="Product price"
+                label={t("Product price")}
               />
             );
           }}
@@ -149,7 +156,7 @@ export const ProductForm = () => {
             setValue("image", base64);
           }}
         />
-        <Button onClick={handleSubmit(onSubmit)}>save product</Button>
+        <Button onClick={handleSubmit(onSubmit)}>{t("Add product")}</Button>
       </FormContainer>
     </FormPageContainer>
   );

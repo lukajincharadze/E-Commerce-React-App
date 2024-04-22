@@ -1,4 +1,27 @@
 {
   "home": "მთავარი გვერდი",
-  "save_product": "პროდუქტის შენახვა"
+  "Searchbar": "ძებნა",
+  "save_product": "პროდუქტის შენახვა",
+  "Product Name": "პროდუქტის სახელი",
+  "Product Brand": "პროდუქტის ბრენდი",
+  "Product Description": "პროდუქტის აღწერა",
+  "price: descending": "ფასი: კლებადი",
+  "price: ascending": "ფასი: ზრდადი",
+  "name: descending": "სახელი: კლებადი",
+  "name: ascending": "სახელი: ზრდადი",
+  "Edit": "რედაქტირება",
+  "Delete": "წაშლა",
+
+  "Add Product": "პროდუქტის დამატება",
+  "Product name": "პროდუქტის სახელი",
+  "Product description": "პროდუქტის აღწერა",
+  "Product brand": "პროდუქტის ბრენდი",
+  "Product category": "პროდუქტის კატეგორია",
+  "Product price": "პროდუქტის ფასი",
+  "Add product": "პროდუქტის დამატება",
+  "Add to cart": "კალათაში დამატება",
+  "parfumes in cart": "სუნამო კალათაში",
+  "Total": "სულ",
+  "in stock": "მარაგშია",
+  "Remove": "წაშლა"
 }

@@ -1,12 +1,11 @@
 import React from "react";
 import { Stack } from "@mui/material";
 import { useDispatch } from "react-redux";
-import { Text, Snackbar, Link } from "../../../components/atoms";
+import { Text, Snackbar, Link } from "../../../components/header/atoms";
 import { LoginForm } from "./LoginForm";
 import { useUser } from "../../../hooks";
 import { clearError } from "../../../redux/slices";
-import LogoImage from "../../../assets/images/logo-2150297_640.jpg";
-import { FormPageContainer } from "../../../components/atoms/FormContainer";
+import { FormPageContainer } from "../../../components/header/atoms/FormContainer";
 
 export const Login = () => {
   const { error } = useUser();

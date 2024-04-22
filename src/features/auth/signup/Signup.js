@@ -1,11 +1,11 @@
 import React from "react";
 import { Stack } from "@mui/material";
-import { Snackbar, Text } from "../../../components/atoms";
+import { Snackbar, Text } from "../../../components/header/atoms";
 import { SignupForm } from "./SignupForm";
 import { useUser } from "../../../hooks";
 import { useDispatch } from "react-redux";
 import { clearError } from "../../../redux/slices";
-import { FormPageContainer } from "../../../components/atoms/FormContainer";
+import { FormPageContainer } from "../../../components/header/atoms/FormContainer";
 
 export const Signup = () => {
   const { error } = useUser();
