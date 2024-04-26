@@ -1,2 +1,2 @@
-# Parfume E Commerce Shop App
+# Parfume E Commerce Shop
 
