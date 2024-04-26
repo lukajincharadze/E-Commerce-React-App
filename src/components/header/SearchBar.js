@@ -37,14 +37,17 @@ export const Searchbar = ({ width }) => {
       freeSolo
       disableClearable
       sx={{
-        width: width || "300px",
+        width: width || "500px",
         ".MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
-          borderRadius: 4,
-          borderColor: "#00FF91",
+          borderRadius: 5,
+          borderColor: "#0A3251",
+          height: "35px",
+          paddingTop: "-10px",
+          paddingBottom: "20px",
         },
         "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
           {
-            borderColor: "#00FF91",
+            borderColor: "#0A3251",
           },
       }}
       loading={loading}
@@ -71,20 +74,21 @@ export const Searchbar = ({ width }) => {
             onChange={(e) => {
               setSearchValue(e.target.value);
             }}
-            placeholder={t("Searchbar")}
+            placeholder={t("Search")}
             InputProps={{
               ...params.InputProps,
               startAdornment: (
                 <InputAdornment position="start">
-                  <BsSearch color="white" size={20} />
+                  {/* x={{ paddingBottom: "17px" } */}
+                  <BsSearch color="#CD5050" size={20} />
                 </InputAdornment>
               ),
             }}
             sx={{
-              input: { color: "#00FFC4" },
+              input: { color: "#0A3251" },
             }}
             InputLabelProps={{
-              style: { color: "#00FFC4" },
+              style: { color: "#0A3251" },
             }}
           />
         );

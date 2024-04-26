@@ -21,7 +21,7 @@ export const CategoryProductList = () => {
     dispatch(
       fetchCategoryProducts({
         category,
-        queryUrl: `?size=1&sort=${sort},desc&page=${page}`,
+        queryUrl: `?size=3&sort=${sort},desc&page=${page}`,
       })
     );
   }, [sort, dispatch, page]);

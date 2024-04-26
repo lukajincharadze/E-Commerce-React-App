@@ -12,7 +12,7 @@ import { ProductCategories } from "./ProductCategories";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 const StyledAppBar = styled(AppBar)(() => ({
-  backgroundColor: "#101010",
+  backgroundColor: "#ffcdbd",
   padding: "0 37px 0 30px",
 }));
 
@@ -39,7 +39,7 @@ export const Header = () => {
     <Box>
       <StyledAppBar>
         <StyledToolbar>
-          <Link style={{ color: "white" }} to="/">
+          <Link style={{ color: "black" }} to="/">
             {t("home")}
           </Link>
           {!isMobileView && <Searchbar />}
@@ -49,7 +49,11 @@ export const Header = () => {
                 setIsSearchBarExpanded((prev) => !prev);
               }}
             >
-              <BsSearch color="white" size={25} style={{ marginLeft: "10" }} />
+              <BsSearch
+                color="#CD5050"
+                size={25}
+                style={{ marginLeft: "10" }}
+              />
             </Button>
           )}
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -60,7 +64,7 @@ export const Header = () => {
               disabled={cartItems.length === 0}
             >
               <Badge badgeContent={cartItemsQuantity} color="primary">
-                <BsCart4 size={30} color="green" />
+                <BsCart4 size={30} color="#CD5050" />
               </Badge>
             </Button>
             <UserIcon />

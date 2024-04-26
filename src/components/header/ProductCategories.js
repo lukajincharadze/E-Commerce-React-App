@@ -20,7 +20,7 @@ export const ProductCategories = () => {
             to={`/products/categories/${name}?sort=price,desc&page=1`}
           >
             <StyledListItem>
-              <Text color="#00FFC4">{name}</Text>
+              <Text color="#CD5050">{name}</Text>
             </StyledListItem>
           </Link>
         );

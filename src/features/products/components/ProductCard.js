@@ -17,9 +17,11 @@ const StyledCard = styled(Card)(() => ({
   border: "none",
   padding: "24px",
   boxShadow: "none",
+  boxShadow: "0px 30px 100px rgba(0, 0 ,0, 0.05)",
+  borderRadius: 20,
+
   "&:hover": {
-    boxShadow: "0px 30px 100px rgba(0, 0 ,0, 0.05)",
-    borderRadius: 20,
+    boxShadow: "0px 30px 100px rgba(0, 0 ,0, 0.2)",
   },
 }));
 

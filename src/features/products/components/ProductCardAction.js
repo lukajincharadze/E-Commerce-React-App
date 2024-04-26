@@ -14,9 +14,9 @@ import { addToCart } from "../../../redux/slices/cartSlice";
 import { useTranslation } from "react-i18next";
 
 const StyledFab = styled(Fab)(() => ({
-  backgroundColor: "black",
+  backgroundColor: "#CD5050",
   "&:hover": {
-    backgroundColor: "black",
+    backgroundColor: "#fD5050",
   },
 }));
 
