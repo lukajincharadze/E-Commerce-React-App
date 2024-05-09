@@ -19,7 +19,13 @@ export const FormPageContainer = ({ children, isProductForm }) => {
     <StyledContainer>
       {!isProductForm && (
         <Link to="/">
-          <img src={LogoImage} width={250} height={250} alt="logo" />
+          <img
+            src={LogoImage}
+            width={250}
+            height={250}
+            alt="logo"
+            className="logo"
+          />
         </Link>
       )}
       <StyledStack>{children}</StyledStack>

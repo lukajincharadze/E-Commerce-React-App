@@ -42,8 +42,9 @@ export const Searchbar = ({ width }) => {
           borderRadius: 5,
           borderColor: "#0A3251",
           height: "35px",
-          paddingTop: "-10px",
-          paddingBottom: "20px",
+          marginTop: "9px",
+          paddingTop: "10px",
+          paddingBottom: "10px",
         },
         "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":
           {
@@ -59,9 +60,16 @@ export const Searchbar = ({ width }) => {
         return (
           <Link to={`/products/categories/${category}/${_id}`}>
             <Stack direction="row" ml={1} mb={1}>
-              <StyledImage src={image} alt={`${category}-${name}`} />
-              <Text>{name}</Text>
-              <Text sx={{ marginLeft: "10" }}>{price}</Text>
+              <StyledImage
+                src={image}
+                alt={`${category}-${name}`}
+                sx={{ marginTop: "5px" }}
+              />
+              <Text sx={{ marginTop: "20px" }}>{name}</Text>
+              <Text sx={{ marginLeft: "10px", marginTop: "20px" }}>
+                {price}
+                {"$"}
+              </Text>
             </Stack>
           </Link>
         );
@@ -79,7 +87,6 @@ export const Searchbar = ({ width }) => {
               ...params.InputProps,
               startAdornment: (
                 <InputAdornment position="start">
-                  {/* x={{ paddingBottom: "17px" } */}
                   <BsSearch color="#CD5050" size={20} />
                 </InputAdornment>
               ),
